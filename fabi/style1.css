@@ -1,0 +1,188 @@
+.navbar {
+    background-color: #222; /* Navbar background color */
+    color: #fff; /* Text color */
+    width: 560px;
+    border-radius: 20px 20px 0 0 ;
+  }
+
+  body {
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+}
+  
+        h1, h2, h3, h4 {
+          /* color: hsl(230, 70%, 16%); */
+          font-family: "Montagu Slab", serif;
+          font-weight: 500;
+        }
+
+        #initial-view {
+          /* Existing styles for initial view */
+          width: 520px;
+          padding: 20px;
+          /* text-align: center; */
+          /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+          /* background-color: #f9f9f9; */
+          /* border: 2px solid #d3c3c3; */
+          border-radius: 0 0 20px 20px;
+        }
+            
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .navbar-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-header h2 {
+    margin-left: 10px; /* Adjust spacing between icon and text */
+  }
+  
+  
+  
+  /* Style the night mode button */
+  #nightModeButton {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 360px;
+  }
+  
+  #nightModeButton .fa-moon {
+    font-size: 20px; /* Adjust icon size */
+  }
+  
+  /* Add more styling as needed */
+  #icon{
+    /* margin-right: 10px; */
+    height: 25px;
+    width: 25px;
+    padding-top: -18px;
+  }  
+
+  .checkbox-container {
+    display: inline-block;
+    width: 50%;
+}
+
+
+/* Style Compare button */
+#compareButton {
+    margin-top: 5px;
+  }
+  
+  /* Style textarea */
+  #comparisonTextarea {
+    margin-top: 5px;
+    width: 100%;
+  }
+  
+  /* Style Generate, Preview, and Clear buttons */
+  #generateButton, #previewButton, #clearButton, {
+    margin-top: 10px;
+  }
+  
+  /* Style Toggle and Download buttons */
+  #toggleButton, #downloadButton {
+    margin-top: 10px;
+  }
+
+  
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .popup-content {
+    max-width: 400px;
+    margin: 100px auto;
+    background: #fff; 
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .popup-content h2 {
+    margin-bottom: 15px;
+  }
+  
+  .popup-content textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .popup-content button ,#doneButton,#previewButton,#clear,#downloadExcelButton,#compare-button{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup-content button:hover {
+    background-color: #0056b3;
+  }
+  
+
+  .checkbox-container label{
+    color:black ;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+  } 
+
+  .night-mode #compare-button,
+  .night-mode #doneButton,
+  .night-mode #previewButton,
+  .night-mode #clear,
+  .night-mode #downloadPdfButton,
+  .night-mode #downloadExcelButton {
+    background-color: #404040; /* Adjust background color */
+    color:rgb(234, 234, 234); /* Adjust text color */
+    border-color:rgb(234, 234, 234); /* Adjust border color */
+  }
+  
+  .night-mode .checkbox-container label {
+    color:rgb(234, 234, 234); /* Adjust text color */
+  }
+
+  .night-mode #initial-view,.body,.nav {
+    background-color: #333; /* Adjust background color for night mode */
+    color: rgb(234, 234, 234); /* Adjust text color for night mode */
+  }
+
+  .night-mode #header #initial-view #check-list{
+    background-color: #333;
+  }
+ 
+  .night-mode {
+    background-color: #333;
+    color: #fff;
+  }

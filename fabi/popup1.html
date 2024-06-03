@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Link Checker</title>
+
+    <link rel="stylesheet" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <img id="icon" src="./icon.png" alt="image of url" />
+            <h2>URL Analyzer</h2>
+            <button id="nightModeButton"><i class="fa-regular fa-moon"></i></button>
+          </div>
+          
+        </div>
+      </nav>
+      <div id="initial-view">
+        <div id="check-list">
+          <div>
+            <div>
+              <div class="checkbox-container">
+                <i class="fas fa-link"></i>
+                <input type="checkbox" id="checkAllLinks" />
+                <label for="enable-check-1">Check all links</label>
+               
+              </div>
+    
+              <br><div class="checkbox-container">
+                <i class="fas fa-link"></i>
+                <input type="checkbox" id="checkBrokenLinks" />
+                
+                <label for="enable-check-2">Check broken links</label>
+    
+                
+              </div>
+              <br><div class="checkbox-container">
+                <i class="fas fa-link"></i>
+                <input type="checkbox" id="checkLocalLanguageLinks" />
+                
+                <label for="enable-check-3">Check local language links</label>
+    
+                
+              </div>
+    
+              <br><div class="checkbox-container">
+                <i class="fas fa-link"></i>
+                <input type="checkbox" id="checkHeading" />
+                
+                <label for="enable-check-4">Heading Hierarchy Check</label>
+    
+                
+              </div>
+    
+              <br><div class="checkbox-container">
+                <i class="fas fa-link"></i>
+                <input type="checkbox" id="ariaCheck" />
+                
+                <label for="enable-check-4">Aria Label Check</label>
+    
+                
+              </div>
+    
+              <br><div class="checkbox-container">
+                <i class="fas fa-link"></i>
+                <input type="checkbox" id="imageCheck" />
+                
+                <label for="enable-check-4">Image Check</label>
+    
+                
+              </div>
+    
+              <br> <div class="checkbox-container">
+                <i class="fas fa-link"></i>
+                <input type="checkbox" id="metaCheck" />
+                
+                <label for="enable-check-4">Page Properties Check</label>
+    
+                
+              </div>
+    
+              <br> <div class="checkbox-container">
+                <i class="fas fa-link"></i>
+                <input type="checkbox" id="akaCheck" />
+                
+                <label for="enable-check-4">Short URL Check</label>   
+    
+                
+              </div>
+    
+              <br> <div class="checkbox-container">
+                <i class="fas fa-link"></i>
+                <input type="checkbox" id="checkAllDetails" />
+                
+                <label for="enable-check-4">Check all details</label>
+                <!-- <div class="info-container">
+                  <span class="question-icon">?</span>
+                  <span class="tooltip-text">Click to select all.</span>
+                </div> -->
+               
+              </div>
+            
+            </div>
+          </div>
+           <!-- Add Compare button and textarea -->
+           
+        </div>
+        <div>
+          
+          <!-- Add Generate, Preview, and Clear buttons -->
+          <br><button id="compare-button">Compare</button>
+          <button id="doneButton">Generate</button>
+          <button id="previewButton">Preview</button>
+          <button id="clear">Clear</button>
+          <button id="downloadExcelButton">Download</button><br>
+        </div>
+        <div>
+          <!-- Add Download button -->
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close">&times;</span>
+    <h2>Comparison</h2>
+    <textarea id="compare-url" rows="4" cols="50"></textarea>
+    <button id="goButton">Go</button>
+  </div>
+</div>
+<script src="popup1.js"></script>
+</body>
+</html>
